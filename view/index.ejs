@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        textarea{
+            height: 200px;
+            width: 600px;
+            background-color: azure;
+        }
+        p{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            width: 600px;
+        }
+        button{
+            background-color: azure;
+            width: 200px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <textarea name="text" placeholder="Message"></textarea>
+        <br>
+        <button href="">Submit</button>
+    </form>
+    <% for (let i = 0; i < article.length; i++) { %>
+       <p><%= article[i].text %></p>
+  <%  } %>
+   
+    
+</body>
+</html>
